@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://scontent.fvga2-1.fna.fbcdn.net/v/t39.30808-6/302670368_448039447343642_5903972967496530447_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=d5T4AUq-crkAX-agYIz&_nc_ht=scontent.fvga2-1.fna&oh=00_AfCpf6-FOVSGRBtW2IeGrgMAPsBr9bwI-oEG8IAddHmRDQ&oe=63FB0EAD" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" onclick="display('sectionHomePage')">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" onclick="display('sectionMenuPage')" id="navItem2">Basic Details</a>
+                    <a class="nav-link" onclick="display('sectionDeliveryPayment')" id="navItem3">Bio</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Achivements</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="sectionHomePage">
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column" >
+        <div class="text-center">
+            <h1 class="banner-heading mb-3">Welcome to student Portfolio</h1>
+            
+            <button class="custom-button" onclick="display('sectionMenuPage')">Enter Details</button>
+            
+        </div>
+    </div>
+    </div>
+    
+    <div id="sectionMenuPage">
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column" >
+        <div class="text-center">
+            <h1 class="banner-heading pt-5"> Basic Details </h1>
+            <form>
+   <table>
+       <tr><td class="text pl-5 ">First Name :   </td>
+            <td><input type="text" placeholder="First Name" name=""></td></tr>
+       <tr><td class="text pl-5 pt-3">Last Name  :</td>
+            <td class="pt-3"><input type="text" placeholder="Last Name" name=""></td></tr>
+       <tr><td class="text pl-3 pt-3">Gender:</td>
+            <td class="text-bg pt-3">
+                  <input type="radio" name="Gender">Male
+                   <input type="radio" name="Gender">Female
+                   <input type="radio" name="Gender">Other</td></tr>
+        <tr><td class="text pl-5 pt-3">Blood Group:</td>
+            <td class="pt-3"><select>
+                <option>A+</option>
+                <option>B+</option>
+                <option>AB+</option>
+                <option>O+</option>
+                <option>O-</option></select></td></tr>
+        <tr> <td class="text pl-2 pt-3">Email:</td>
+             <td class="pt-3"><input type="mail" placeholder="Email" name=""></td></tr>
+       <tr><td class="text pl-5 pt-3 pb-5">Date Of Birth:</td>
+           <td class="pt-3 pb-5"><input type="date" </td></tr>
+    </table>
+            
+            <button class="custom-button" onclick="display('sectionMenuPage')">Next</button>
+            
+        </div>
+    </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
